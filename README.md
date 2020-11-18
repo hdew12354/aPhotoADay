@@ -21,3 +21,8 @@ simply put, ~~spend 3 days trying to~~ put the files in this repo onto the pi, t
 - [ ] Sending pictures to ... wherever, saves them locally
 - [ ] WEB CONFIG!!!
 - [ ] A- any .... config...... sorry i'll get on that lol
+
+## Follow!
+🐦 Follow me on Twitter 🐦 https://twitter.com/Emilyonaire__
+✅ Follow Development on the Trello Board✅ https://trello.com/b/ssrRl3QZ
+💸 Commision me! I Make custom Dsicord Bots! 💸 https://www.fiverr.com/emilyonaire
