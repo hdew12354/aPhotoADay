@@ -1,5 +1,5 @@
 # a Photo A Day
-an AutomaticSelfie Journal maker thingy for Raspberry Pi, created & tested RasPi Zero WH with the ZeroCam
+an Automatic Selfie Journal maker thingy for Raspberry Pi, created & tested RasPi Zero WH with the ZeroCam
 
 
 #How To Use!
