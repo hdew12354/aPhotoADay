@@ -1,5 +1,5 @@
 print("go")
-#i know i can import multiple on one line, i just wanna see which mod takes the longest, pobs gonna be cv2 tho
+#[Claire]: i know i can import multiple on one line, i just wanna see which mod takes the longest, probs gonna be cv2 tho
 print("importing numpy")
 import numpy as np
 print("importing cv2")
@@ -16,7 +16,7 @@ print("importing keyboard")
 import keyboard
 print("finished importing")
 alreadyDoneTodaysPic = False
-
+roboName = Claire
 ###<DEFS>###
 
 def savePic(alreadyDoneTodaysPic, frame, faceCount):
@@ -99,14 +99,14 @@ while True:
                     print(type(faces[0]))
                     print("~~~~~~")
                     print("Number of faces detected: " + str(faces.shape[0]))
-                    print("Hello!")
+                    print("[" + roboName + "]: Hello!")
                     video_capture.release()
                     alreadyDoneTodaysPic = savePic(alreadyDoneTodaysPic, frame, faces.shape[0])
                 except IndexError:
-                    print("fucking index error, assuming this means no face detected, if you're certain there was a face in shot that it should've found, mess with the minNeighbors variable, it's kinda like the sensitivity option for the face recognition")
+                    print("index error, assuming this means no face detected, if you're certain there was a face in shot that it should've found, mess with the minNeighbors variable, it's kinda like the sensitivity option for the face recognition")
                     video_capture.release()
                 except SyntaxError:
-                    print ("faces.shape[0] AttributeError: 'tuple' object has no attribute 'shape' BUT WE GONNA IGNORE DAT SHIT")
+                    print ("faces.shape[0] AttributeError: 'tuple' object has no attribute 'shape', release vc to be safe")
                     video_capture.release()
                 
 
@@ -120,18 +120,18 @@ while True:
                 video_capture.release()
                 break
         else:
-            print("already taken today's pic!")
+            print("[" + roboName + "]: I'm sure you look amazing, but I've already taken today's pic!")
             now = datetime.now()
             tomorrow = datetime.now() + deltatime(1)
             targetTime = datetime(year=tomorrow.year, month = tomorrow.month, day = tomorrow.day, hour = 6, minute = 0, second = 0)
             waitTime = (targetTime - now).seconds
-            print("darn, i'm tired, i'm gonna nap for " + str(waitTime) + " seconds, goodnight. (-, -)...zzzZZZ")
+            print("[" + roboName + "]: darn, i'm tired, i'm gonna nap for " + str(waitTime) + " seconds, goodnight. [-, -]...zzzZZZ")
             
             while(waitTime != 0):
                 if (keyboard.read_key() != None):
                     #wake up
                     waitTime = 0
-                    print("(*^*) yes? oh you want me to go again? ok!")
+                    print("[" + roboName + "]: [*^*] yes? oh you want me to go again? ok!")
                     alreadyDoneTodaysPic = False
                 else:                        
                     time.sleep(1)
