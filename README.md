@@ -3,7 +3,7 @@ an Automatic Selfie Journal maker thingy for Raspberry Pi, created & tested RasP
 
 
 #How To Use!
-simply put, ~~spend 3 days trying to~~ put the files in this repo onto the pi, then make a folder called DailyPhotos
+simply put, ~~spend 3 days trying to~~ put the files in this repo onto the pi, then make a folder called DailyPhotos! once you've done that, simply run main-2.py and you're set!
 
 ##TODO
 - [X] Automatic Picture Taking if face is seen in ~~scene~~ shot
