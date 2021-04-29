@@ -1,0 +1,28 @@
+print("flask start")
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    
+    
+    frame = cv2.imread('pain.png')
+    
+    print(type(frame))
+    return render_template('homepage.html', clientCfg=cfg, image=frame)
+    print("user on homepage")
+
+
+if(__name__ == '__main__'):
+    app.run(debug=True)
+
+print("flask uuh it got past flask lines")
+
+###/ SITE LOGIC ###
+
+
+var array = {% pastImages %}
+
+{{ set array[] = pastImages.split(', ') }}
+
+{{ pastImages = str(list(pastimages).pop(0)) }}
+      {{} pastImages = str(list(pastimages).pop(list.len())) }}
